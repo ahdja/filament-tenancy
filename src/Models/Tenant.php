@@ -54,4 +54,9 @@ class Tenant extends \Stancl\Tenancy\Database\Models\Tenant implements TenantWit
     {
         return $this->hasMany(SocialAuth::class, 'tenant_id', 'id');
     }
+
+    public function configs(): HasMany
+    {
+        return $this->hasMany(TenantConfigurations::class,'tenant_id','id');
+    }
 }

@@ -35,6 +35,15 @@ class CreateTenantsTable extends Migration
 
             $table->timestamps();
         });
+
+        Schema::create('tenant_configurations',function(Blueprint $table){
+            $table->id();
+            $table->string('tenant_id')->nullable();
+            $table->foreign('tenant_id')->references('id')->on('tenants')->cascadeOnDelete();
+            $table->string('config_name');
+            $table->string('config_value');
+            $table->timestamps();
+        }); 
     }
 
     /**
@@ -45,5 +54,6 @@ class CreateTenantsTable extends Migration
     public function down(): void
     {
         Schema::dropIfExists('tenants');
+        Schema::dropIfExists('tenant_configurations');
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "tomatophp/filament-tenancy",
+    "name": "ahdja/filament-tenancy",
     "type": "library",
     "description": "Tenancy multi-database integration for FilamentPHP",
     "keywords": [
@@ -12,6 +12,7 @@
         "filament-plugins",
         "tomatophp"
     ],
+    "version": "dev-master",
     "license": "MIT",
     "autoload": {
         "psr-4": {

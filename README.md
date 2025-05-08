@@ -28,6 +28,7 @@ Tenancy multi-database integration for FilamentPHP
 - [ ] Share Tenant Data
 - [ ] Custom Theme For Tenant
 - [ ] Livewire Component For Register New Tenant
+- [x] Add Tenant Configurations (ahdja)
 
 ## Installation
 

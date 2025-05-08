@@ -195,6 +195,7 @@ class TenantResource extends Resource
     public static function getRelations(): array
     {
         return [
+            RelationManagers\TenantConfigurationRelationManager::class,
             RelationManagers\DomainsRelationManager::class,
         ];
     }
