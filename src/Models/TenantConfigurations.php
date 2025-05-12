@@ -13,11 +13,5 @@ class TenantConfigurations extends Model
         'config_value',
     ];
 
-    /**
-     * @return HasOne
-     */
-    public function social(): HasOne
-    {
-        return $this->hasOne(Tenant::class,'id','tenant_id');
-    }
+    
 }
